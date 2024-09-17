@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          path: build
+          repository: 'Bond-z/cypress-cicd'
+          path: cypress-cicd
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
